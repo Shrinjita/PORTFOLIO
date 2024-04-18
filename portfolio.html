@@ -8,7 +8,7 @@
   <meta name="keywords" content="Shrinjita Paul, AI Engineer, Python, NLP, ML, web development, achievements, certifications, projects">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
-  .circular-img-container {
+    .circular-img-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,18 +24,26 @@
     width: 100%; /* Ensure the image fills the circular area */
     height: auto; /* Maintain aspect ratio */
   }
-
-
-    body {
-      background-color: #f8f9fa; /* Soft gray background */
-      font-family: 'Arial', sans-serif; /* Clear typography */
+  h2.centered {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: fadeInUp 1s ease forwards;
+      opacity: 0;
     }
-    .container {
-      margin-top: 50px; /* Spacing from top */
+      @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+      }
+      to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+      }
     }
-    h1, h2, h3, h4, h5, h6 {
-      font-family: 'Montserrat', sans-serif; /* Custom font for headings */
-    }
+   
     .navbar-brand {
       font-size: 1.5rem;
       font-weight: bold;
@@ -61,10 +69,7 @@
       background-color: #0056b3; /* Darker blue on hover */
       border-color: #0056b3;
     }
-    .list-group-item {
-      border-color: #007bff; /* Blue border for list items */
-    }
-    .list-group-item:hover {
+        .list-group-item:hover {
       background-color: #f8f9fa; /* Light gray on hover */
     }
     .footer {
@@ -74,211 +79,255 @@
     .footer p {
       margin-bottom: 0; /* Remove bottom margin from paragraphs */
     }
+.section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.col-md-6 {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.col-md-6 h3 {
+  background-color: #004085;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.col-md-6 ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.col-md-6 li {
+  margin-bottom: 10px;
+}
+.list-group-item {
+  border-color: #007bff; /* Blue border for list items */
+  color: black;
+}
+
+.list-group-item:hover {
+  background-color: #f8f9fa; /* Light gray on hover */
+}
+body {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section-header {
+            font-size: 36px;
+            font-weight: bold;
+            color: #010000;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            font-size: 20px;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 15px;
+        }
   </style>
-</head>
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container" style="margin-right: 20px;"> <!-- Added margin-right style -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="https://github.com/Shrinjita">GitHub</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/shrinjita-paul-8a940a248">LinkedIn</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/shrinjita_paul/">Instagram</a></li>
-            <li class="nav-item"><a class="nav-link" href="tel:+917439947074">Phone</a></li>
-            <li class="nav-item"><a class="nav-link" href="resume.pdf" download>Resume</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://www.wattpad.com/user/YourDreamLoveLuna">Wattpad</a></li>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container" style="margin-right: 20px;"> <!-- Added margin-right style -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="https://github.com/Shrinjita">GitHub</a></li>
+              <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/shrinjita-paul-8a940a248">LinkedIn</a></li>
+              <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/shrinjita_paul/">Instagram</a></li>
+              <li class="nav-item"><a class="nav-link" href="tel:+917439947074">Phone</a></li>
+              <li class="nav-item"><a class="nav-link" href="resume.pdf" download>Resume</a></li>
+              <li class="nav-item"><a class="nav-link" href="https://www.wattpad.com/user/YourDreamLoveLuna">Wattpad</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>    
+  
+      <div class="jumbotron text-center">
+        <div class="container">
+          <div class="circular-img-container mb-4">
+            <div class="circular-img">
+              <img src="resume.jpg" alt="Shrinjita Paul">
+            </div>
+          </div>
+          <h1 class="display-4">SHRINJITA PAUL</h1>
+          <p class="lead">AI ENGINEER</p>
+        </div>
+      </div>
+  
+    <main>
+        <section id="about" class="py-5">
+            <div class="container">
+                <h2 class="section-header">About Me</h2>
+                <p class="content">
+                    I'm a passionate Computer Engineer on a quest to unlock the potential of AI. Fueled by a deep fascination with Natural Language Processing, data analysis, and bleeding-edge AI projects, I thrive on crafting innovative solutions that push the boundaries of the tech industry.
+                </p>
+                <p class="content">
+                    Feel free to explore my resume and GitHub to learn more about my projects.
+                </p>
+            </div>
+        </section>
+        
+      <section id="education" class="py-5">
+        <div class="container">
+          <h2 class="section-header">Education</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <ul class="list-group">
+                <h3>Academics:</h3>
+                <li class="list-group-item"><a href="CGPA.pdf" download>B.Tech in Artificial Intelligence, SRM Institute Of Science and Technology, Kattankulathur Main Campus (2022 - 2026)</a></li>
+                <li class="list-group-item">Calcutta Girls' High School, Kolkata (2008-2022)</li>
+                <h3>Certifications</h3>        
+                <li class="list-group-item"><a href="Programming In Java.pdf" download>Java(NPTEL)</a></li>
+                <li class="list-group-item"><a href="Computer Architecture.pdf" download>Computer Organization & Architecture(NPTEL)</a></li>
+              <li class="list-group-item"><a href="https://www.linkedin.com/posts/shrinjita-paul-8a940a248_1000-free-courses-with-free-certificates-activity-7185722455141834754-BFLX?utm_source=share&utm_medium=member_android">ML Course from Great Learning</a></li>
+              <li class="list-group-item">Web Development Course(UDEMY) - Ongoing</li>
+              <li class="list-group-item"><a href="https://www.linkedin.com/posts/shrinjita-paul-8a940a248_and-stock-market-activity-7102178773701197824-aGZa?utm_source=share&utm_medium=member_android">Stock Market and Financial Management Certificate issued by Goela School of Finance</a></li>
+               </ul>            </div>             
+                          <div class="col-md-6">
+                            <li class="list-group-item"><a href="https://www.linkedin.com/posts/shrinjita-paul-8a940a248_building-smart-robota-using-ai-activity-7101074284059508736-nvCl?utm_source=share&utm_medium=member_android">STTP on Robots</a></li>    
+   <h3>Hackathons</h3>
+        <ul class="list-group">
+          <li class="list-group-item"><a href="https://www.linkedin.com/posts/shrinjita-paul-8a940a248_had-fun-in-a-24-hr-hackathon-activity-7099711337844412416-MBt1?utm_source=share&utm_medium=member_android">QUANTATHON 23</a></li>
+        <li class="list-group-item"><a href="https://www.linkedin.com/posts/shrinjita-paul-8a940a248_codefest-24-36-hr-hackathon-activity-7161219695935647744-I935?utm_source=share&utm_medium=member_android">CodeFest 24</a></li>
+        <li class="list-group-item"><a href="https://www.linkedin.com/posts/shrinjita-paul-8a940a248_ey-techathon-activity-7138380321598709761-1oCI?utm_source=share&utm_medium=member_android">EY Techathon</a></li>
+        <li class="list-group-item"><a href="https://www.linkedin.com/posts/shrinjita-paul-8a940a248_on-coding-activity-7099719009767473152-HTav?utm_source=share&utm_medium=member_android">Coding Ninjas</a></li>
+        <li class="list-group-item"><a href="https://www.linkedin.com/posts/shrinjita-paul-8a940a248_participated-in-the-raspberry-pi-expo-activity-7132627642696024064-Spoo?utm_source=share&utm_medium=member_android">Raspberry Pi Expo</a></li>    
+              <h3>Extra Curricular Participations</h3>
+        <li class="list-group-item"><a href="https://www.linkedin.com/posts/shrinjita-paul-8a940a248_participation-in-the-wordsmith-expo-activity-7116127770249728001-rnCW?utm_source=share&utm_medium=member_android">WordSmith Expo 23</li>  
+          <li class="list-group-item"><a href="https://www.linkedin.com/posts/shrinjita-paul-8a940a248_i-had-participated-in-vitc-mun-23-activity-7104353274950033408-DCSu?utm_source=share&utm_medium=member_android">VITC MUN 23</a></li>
+        <li class="list-group-item">IEC 22</li> 
+        </ul>          </div>        </div>  </section>
+
+          <section id="projects" class="py-5">
+            <div class="container">
+                <h2 class="section-header">Projects</h2>
+                <div class="row">
+                  <div class="col-md-6">
+                    <ul class="list-group">
+                <li class="list-group-item">Carbon Footprint Calculator</li>
+                <li class="list-group-item"><a href="https://github.com/Shrinjita/COLLEGE-WORK/tree/main/IOT%20SRS">IoT SRS (Smart Room System)</a></li>
+                <li class="list-group-item"><a href="https://github.com/Shrinjita/GenAI-LLM">Generative AI</a></li>
+                <li class="list-group-item"><a href="https://github.com/Shrinjita/MACHINE-LEARNING/tree/main/IMG%20CAP">Image Captioning</a></li>
+                <li class="list-group-item">Audio Transfer using Li-Fi Technology</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+                    <ul class="list-group">
+                <li class="list-group-item">Voting, Lift, Attendance Management</li>
+                <li class="list-group-item"><a href="https://github.com/Shrinjita/COLLEGE-WORK/blob/main/oodp/BusinessManagementSys.cpp">Business Management System</a></li>
+                <li class="list-group-item">Music Generation using midi files</li>
+                <li class="list-group-item">Ongoing: INLINE ROBOTICS IN LIBRARY SYSTEM</li>
+              </ul>
+            </div>
+          </section>
+          
+          <section id="experience" class="py-5">
+            <div class="container">
+                <h2 class="section-header">Professional Experience</h2>
+                <div class="row">
+                  <div class="col-md-12">
+                    <ul class="list-group">
+                 <h3><a href="https://www.instagram.com/tedxsrmist?igsh=MWF2Nmk2YTZkbmwzMQ==">Content Writer at TEDxSRMIST(September 2023 - PRESENT)</a></h3>
+                  <ul>
+                    <li>Crafted engaging social media content, stories, and reels for TEDxSRMIST events.</li>
+                    <li>Effectively communicated event highlights to engage the audience across various platforms.</li>
+                  </ul>
+                  <h3><a href="https://www.instagram.com/next_gen.ai?igsh=MXJvMXdwODJxd3k3OQ==">Technical Member NLP at CINTEL's Next-Gen AI(September 2023 - PRESENT)</a></h3>
+                             <li>Specialized in NLP, image annotations, data cleaning, and image captioning.</li>
+                    <li>Contributed to innovative NLP projects under the guidance of Dr. Baranidharan.</li>
+                  </ul>
+                </ul>
+                </div>
+                <div class="col-md-12>
+                    <ul class="list-group">
+                 <h3><a href="https://www.linkedin.com/posts/shrinjita-paul-8a940a248_handling-muns-taught-me-a-lot-activity-7099712944111812608-WcNV?utm_source=share&utm_medium=member_android">Business Relations & Management</a> at <a href="https://www.instagram.com/srm_munsoc?igsh=N2d5dnUwanA3MG5w">SRM MUNSOC</a></h3>
+                 <ul>
+             <li>Acquired sponsorships and managed event coordination for SRM MUN 2023.</li>
+                    <li>Built and maintained relationships with sponsors, ensuring successful event execution.</li>
+                  </ul>
+                <h3><a href="https://www.linkedin.com/posts/shrinjita-paul-8a940a248_cosmic365ai-activity-7171940473756901376-_0tL?utm_source=share&utm_medium=member_android">AI Intern at COSMI365.ai</a></h3>
+                <ul>
+                    <li>Developed and implemented Microsoft Power Automate flows to streamline product development processes.</li>
+                    <li>Automated repetitive tasks and workflows to improve efficiency and productivity.</li>
+                    <li>Collaborated with the development team to integrate AI capabilities into the product.</li>
+                  </ul> </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="skills" class="py-5">
+    <div class="container">
+      <h2 class="section-header"">Skills</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <ul class="list-group">
+            <h3>Programming:</h3>
+            <li class="list-group-item">Python</li>
+            <li class="list-group-item">Java</li>
+            <li class="list-group-item">C Programming</li>
+            <li class="list-group-item">C++ Programming</li>
+            <li class="list-group-item">SQL</li>
+            <li class="list-group-item">Data Structures & Algorithms</li>
+            <h3>Language Proficiency:</h3>  
+            <li class="list-group-item">Spoken & Written English
+            </li>        </ul>        </div>
+        <div class="col-md-6">
+          <ul class="list-group">
+            <h3>Data Science and Machine Learning:</h3>
+            <li class="list-group-item">Data Analytics</li>
+            <li class="list-group-item">Data Science</li>
+            <li class="list-group-item">Machine Learning</li>
+            <li class="list-group-item">Natural Language Processing (NLP)</li>
+            <li class="list-group-item">Computer Vision</li>
+            <li class="list-group-item">Neural Networks</li>
+            <li class="list-group-item">Deep Learning</li>
+            <li class="list-group-item">MS-Excel</li>
           </ul>
         </div>
       </div>
-    </nav>    
-
-    <div class="jumbotron text-center">
-      <div class="container">
-        <div class="circular-img-container mb-4">
-          <div class="circular-img">
-            <img src="resume.jpg" alt="Shrinjita Paul">
-          </div>
-        </div>
-        <h1 class="display-4">SHRINJITA PAUL</h1>
-        <p class="lead">AI ENGINEER</p>
-      </div>
     </div>
+  </section>
+  <section id="contact" class="bg-dark text-light py-5">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>
+        Feel free to reach out to me for inquiries, collaborations, or any questions you may have. You can use the contact number given above or email me directly at <a href="mailto:shrinjitapaul@gmail.com">shrinjitapaul@gmail.com</a>.
+      </p>
+      <!-- Contact Form or Email Address -->
+    </div>
+  </section>
 
-  <main>
-    <section id="about" class="py-5">
-      <div class="container">
-        <h2 class="text-center mb-4">About Me</h2>
-        <p>
-          I'm a passionate Computer Engineer on a quest to unlock the potential of AI.  Fueled by a deep fascination with Natural Language Processing, data analysis, and bleeding-edge AI projects, I thrive on crafting innovative solutions that push the boundaries of the tech industry.
-         </p>
-        <p>
-          Feel free to explore my resume and GitHub to learn more about my projects.
-        </p>
-      </div>
-    </section>
-
-    <section id="education" class="bg-light py-5">
-      <div class="container">
-        <h2>Education</h2>
-        <ul class="list-group">
-          <li class="list-group-item">B.Tech in Artificial Intelligence, SRM Institute Of Science and Technology, Kattankulathur Main Campus (2022 - 2026)</li>
-          <li class="list-group-item">Calcutta Girls' High School, Kolkata (2008-2022)</li>
-        </ul>
-      </div>
-      <div class="container">
-          <h2>Certifications</h2>
-          <ul class="list-group">
-            <li class="list-group-item">NPTEL Courses in Java & COA</li>
-          <li class="list-group-item"><a href="https://www.linkedin.com/posts/shrinjita-paul-8a940a248_1000-free-courses-with-free-certificates-activity-7185722455141834754-BFLX?utm_source=share&utm_medium=member_android">ML Course from Great Learning</a></li>
-          <li class="list-group-item">Web Dev Course from Udemy</li>
-          <li class="list-group-item">Stock Market Course from Goela School of Finance</li>
-          <li class="list-group-item">STTP on Robots</li>    
-          <li class="list-group-item">Participation in Quantathon, EY Techathon, Codefest, Coding Ninjas, and various hackathons.</li>
-        </ul>
-        </div>
-    </section>
-    <section id="projects" class="py-5">
-      <div class="container">
-        <h2>Projects</h2>
-        <ul class="list-group">
-          <li class="list-group-item">Carbon Footprint Calculator</li>
-          <li class="list-group-item"><a href="https://github.com/Shrinjita/COLLEGE-WORK/tree/main/IOT%20SRS">IoT SRS (Smart Room System)</a></li>
-          <li class="list-group-item"><a href="https://github.com/Shrinjita/GenAI-LLM">Generative AI</a></li>
-          <li class="list-group-item"><a href="https://github.com/Shrinjita/MACHINE-LEARNING/tree/main/IMG%20CAP">Image Captioning</a></li>
-          <li class="list-group-item">Audio Transfer using Li-Fi Technology</li>
-          <li class="list-group-item">Voting, Lift, Attendance Management</li>
-          <li class="list-group-item"><a href="https://github.com/Shrinjita/COLLEGE-WORK/blob/main/oodp/BusinessManagementSys.cpp">Business Management System</a></li>
-          <li class="list-group-item">Music Generation using midi files</li>
-          <li class="list-group-item">Ongoing: INLINE ROBOTICS IN LIBRARY SYSTEM</li>
-        </ul>
-      </div>
-    </section>
-    
-    <section id="experience" class="bg-light py-5">
-      <div class="container">
-        <h2>Professional Experience</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <h3>Content Writer at TEDxSRMIST</h3>
-            <ul>
-              <li>Crafted engaging social media content, stories, and reels for TEDxSRMIST events.</li>
-              <li>Effectively communicated event highlights to engage the audience across various platforms.</li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h3>Technical Member NLP at CINTEL's Next-Gen AI</h3>
-            <ul>
-              <li>Specialized in NLP, image annotations, data cleaning, and image captioning.</li>
-              <li>Contributed to innovative NLP projects under the guidance of Dr. Baranidharan.</li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h3>Business Relations & Management at SRM MUNSOC</h3>
-            <ul>
-              <li>Acquired sponsorships and managed event coordination for SRM MUN 2023.</li>
-              <li>Built and maintained relationships with sponsors, ensuring successful event execution.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <h3>AI Intern at COSMI365.ai</h3>
-            <ul>
-              <li>Developed and implemented Microsoft Power Automate flows to streamline product development processes.</li>
-              <li>Automated repetitive tasks and workflows to improve efficiency and productivity.</li>
-              <li>Collaborated with the development team to integrate AI capabilities into the product.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section id="skills" class="py-5">
-      <div class="container">
-        <h2>Skills</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <ul class="list-group">
-              <li class="list-group-item">HTML - Intermediate</li>
-              <li class="list-group-item">JavaScript - Intermediate</li>
-              <li class="list-group-item">CSS - Beginner</li>
-              <!--<li class="list-group-item">Node.js - Beginner</li>-->
-              <li class="list-group-item">Data Analytics - Beginner</li>
-              <li class="list-group-item">Data Science - Beginner</li>
-              <li class="list-group-item">Machine Learning - Beginner</li>
-              <li class="list-group-item">Natural Language Processing (NLP) - Beginner</li>
-              <li class="list-group-item">Computer Vision - Beginner</li>
-              <li class="list-group-item">APIs - Beginner</li>
-              <li class="list-group-item">Flask - Beginner</li>
-              <li class="list-group-item">Neural Networks - Beginner</li>
-              <li class="list-group-item">Python - Intermediate</li>
-              <li class="list-group-item">MongoDB - Beginner</li>
-              <!--<li class="list-group-item">ReactJS - Beginner</li>-->
-              <li class="list-group-item">MS SQL Server - Beginner</li>
-              <li class="list-group-item">Data Structures - Intermediate</li>
-              <!-- New skill -->
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <ul class="list-group">
-              <li class="list-group-item">MySQL - Beginner</li>
-              <li class="list-group-item">Django - Beginner</li>
-              <li class="list-group-item">Cloud Computing - Beginner</li>
-              <li class="list-group-item">Docker - Beginner</li>
-              <li class="list-group-item">Java - Advanced</li>
-              <li class="list-group-item">C Programming - Intermediate</li>
-              <li class="list-group-item">C++ Programming - Intermediate</li>
-              <li class="list-group-item">SQL - Beginner</li>
-              <li class="list-group-item">Deep Learning - Beginner</li>
-              <li class="list-group-item">MS-Excel - Intermediate</li>
-              <li class="list-group-item">English Proficiency - Advanced</li>
-              <li class="list-group-item">Content Writing - Intermediate</li>
-              <li class="list-group-item">Content Marketing - Beginner</li>
-              <li class="list-group-item">WordPress - Beginner</li>
-              <li class="list-group-item">Bootstrap - Intermediate</li>
-              <!--<li class="list-group-item">PHP - Beginner</li>-->
-              <!--<li class="list-group-item">UI/UX Design - Intermediate</li> -->
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section id="contact" class="bg-dark text-light py-5">
-      <div class="container">
-        <h2>Contact Me</h2>
-        <p>
-          Feel free to reach out to me for inquiries, collaborations, or any questions you may have. You can use the contact number given above or email me directly at <a href="mailto:shrinjitapaul@gmail.com">shrinjitapaul@gmail.com</a>.
-        </p>
-        <!-- Contact Form or Email Address -->
-      </div>
-    </section>
-
-  </main>
-
+</main>
   <footer class="footer py-4 text-center">
     <div class="container">
       <p>&copy; 2024 Shrinjita Paul - AI Engineer</p>
     </div>
   </footer>
-
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-  </script>
 </body>
 </html>
