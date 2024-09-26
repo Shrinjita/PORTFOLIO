@@ -39,7 +39,7 @@ I am passionate about AI and its applications for social good, particularly in i
 - **B.Tech in Artificial Intelligence - SRMIST KTR** (09.2022 to Present | Chennai)
 
 ## Contact
-Feel free to reach out to me via email at [shrinjitapaul@gmail.com](mailto:shrinjitapaul@gmail.com) or connect with me on [LinkedIn](https://linkedin.com/in/yourprofile) and [GitHub](https://github.com/yourprofile).
+Feel free to reach out to me via email at [shrinjitapaul@gmail.com](mailto:shrinjitapaul@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/shrinjita-paul-8a940a248/) and [GitHub](https://github.com/Shrinjita).
 
 ## Installation
 
