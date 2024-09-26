@@ -1,4 +1,4 @@
-```markdown
+
 # Shrinjita Paul Portfolio
 
 Welcome to my portfolio! This web application showcases my skills, projects, and experiences as an AI Engineer specializing in artificial intelligence, machine learning, and web development.
